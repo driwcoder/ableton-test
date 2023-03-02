@@ -1,3 +1,7 @@
+:root{
+
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +9,8 @@
 }
 html {
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 #container {
   min-height: 100%;
@@ -14,8 +20,10 @@ html {
   font-family: "Source Code Pro";
   word-spacing: -5px;
   letter-spacing: -1px;
+  min-width: 1256px;
+  max-width: 1256px;
 }
-span{
+span {
   color: blue;
 }
 /* HEADER */
@@ -108,31 +116,39 @@ section {
   width: 100%;
 }
 
-#texto {
+#texto, #texto2, #texto3, #texto4, #texto5, #texto6 {
   margin-top: 100px;
   width: 75%;
 }
-#texto p{
+#texto5 p{
+  margin-top: 15px;
+}
+#texto p {
   margin-top: 15px;
 }
 
-#pad-photo{
+#pad-photo {
   margin-top: 100px;
   display: flex;
   max-width: 100%;
   justify-content: space-between;
 }
-#pad-photo1{
-}
-#pad-photo1 img{
-  width: 500px;
+#pad-photo1 {
   z-index: 1;
-  position: absolute;
-  left: 40px;
-  top: 1300px;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#pad-photo2{
-  width: 800px;
+#pad-photo1 img {
+  width: 500px;
+}
+#pad-photo1 img:last-of-type {
+  margin-left: 100px;
+  width: 400px;
+}
+#pad-photo2 {
+  width: 60vw;
   height: 750px;
   background-color: rgb(245, 245, 119);
   /* config */
@@ -141,15 +157,76 @@ section {
   align-items: center;
   position: absolute;
   right: 0;
-}
-#pad-photo2 img{
-  width: 400px;
   z-index: 0;
 }
 
-#texto2{
-  margin-top: 1000px;
+
+
+#video {
+  margin-top: 100px;
 }
+
+#pad-photo3 {
+  margin-top: 100px;
+  display: flex;
+  max-width: 1256px;
+}
+      #ladoEsq {
+        width: 60vw;
+        height: 1000px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #b6ffc0;
+        z-index: 0;
+      }
+          #ladoEsq img {
+            height: 300px;
+            width: 350px;
+          }
+      #ladoDir {
+        display: flex;
+        align-items: center;
+        width: 40vw;
+        position: relative;
+      }
+          #ladoDir img {
+            width: 570px;
+            position: absolute;
+            right: 20px;
+            z-index: 1;
+          }
+      #imagem6{
+        width: 85%;
+        margin-top: 100px;
+      }
+
+#pad-photos4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  height: 800px;
+  width: 800px;
+  background-color: #d5b3ff;
+  position: relative;
+}
+#pad-photos4 img:first-child{
+  height: 300px;
+}
+#pad-photos4 img:last-child{
+  width: 600px;
+  margin-left: 100px;
+}
+
+#pad-photos5 img{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 footer {
   position: sticky;
   top: 100%;
